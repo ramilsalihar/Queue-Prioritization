@@ -1,34 +1,25 @@
-
+import 'package:banking/views/intro_page.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:queue/views/intro_page.dart';
+
 
 void main() {
-  runApp(Queue());
+  runApp(const Queue());
+  // YandexMap.register(apiKey: "db5be2e5-678e-4a3c-b916-91b0704e41b9");
 }
 
 class Queue extends StatelessWidget {
+  const Queue({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        textTheme: GoogleFonts.cairoTextTheme(
-          Theme.of(context).textTheme.copyWith(
-            bodyText2: TextStyle(fontSize: 18),
-          ),
-        ),
-        appBarTheme: const AppBarTheme(
-          elevation: 0,
-          centerTitle: false,
-          color: Colors.white,
-          iconTheme: IconThemeData(color: Colors.black),
-        ),
-      ),
       debugShowCheckedModeBanner: false,
-      home: const IntroPage(),
+      home: IntroPage(),
     );
   }
 }
+
+/*
+*
+* const */

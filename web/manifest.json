@@ -1,6 +1,6 @@
 {
-    "name": "queue",
-    "short_name": "queue",
+    "name": "banking",
+    "short_name": "banking",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
